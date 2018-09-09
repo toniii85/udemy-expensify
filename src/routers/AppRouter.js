@@ -6,6 +6,7 @@ import AddExpensePage from "../components/AddExpensePage";
 import EditExpensePage from "../components/EditExpensePage";
 import HelpPage from "../components/HelpPage";
 import NotFoundPage from "../components/NotFoundPage";
+import ExpensesSummary from "../components/ExpensesSummary";
 
 
 const AppRouter = () => (
