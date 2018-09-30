@@ -8,6 +8,7 @@ import "normalize.css/normalize.css";
 import "react-dates/lib/css/_datepicker.css";
 import "moment/locale/es";
 import "./styles/styles.scss";
+import "./firebase/firebase";
 
 numeralLocale();
 const store = configureStore();
