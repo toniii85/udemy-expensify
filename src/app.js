@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Provider } from "react-redux"; 
+import { Provider } from "react-redux";
 import AppRouter from "./routers/AppRouter";
 import configureStore from "./store/configureStore";
 import numeralLocale from "./config/numeral-locale";
+import { startSetExpenses } from "./actions/expenses";
 import "normalize.css/normalize.css";
 import "react-dates/lib/css/_datepicker.css";
 import "moment/locale/es";
@@ -18,4 +19,9 @@ const jsx = (
     <AppRouter />
   </Provider>
 );
-ReactDOM.render(jsx, document.getElementById("app"));
+
+ReactDOM.render(<p>Loading...</p>, document.getElementById("app"));
+
+store.dispatch(startSetExpenses()).then(() => {
+  ReactDOM.render(jsx, document.getElementById("app"));
+});
