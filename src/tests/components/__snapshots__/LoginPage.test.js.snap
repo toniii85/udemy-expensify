@@ -1,11 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render login button correctly 1`] = `
-<div>
-  <button
-    onClick={[Function]}
+<div
+  className="box-layout"
+>
+  <div
+    className="box-layout__box"
   >
-    Login
-  </button>
+    <h1
+      className="box-layout__title"
+    >
+      Gastos
+    </h1>
+    <p>
+      Hora de mantener tus gastos bajo control
+    </p>
+    <button
+      className="button"
+      onClick={[Function]}
+    >
+      Login con Google
+    </button>
+  </div>
 </div>
 `;
